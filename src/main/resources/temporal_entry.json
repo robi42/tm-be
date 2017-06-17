@@ -1,0 +1,33 @@
+{
+    "temporal_entry": {
+        "_timestamp": {
+            "enabled": true
+        },
+        "dynamic_date_formats": [
+            "ordinal_date||epoch_millis",
+            "basic_date||epoch_millis",
+            "date_optional_time||date_time_no_millis||epoch_millis",
+            "yyyy/MM/dd||yyyy/MM/dd HH:mm:ss||yyyy/MM/dd HH:mm:ss.SSS||epoch_millis",
+            "MM/dd/yyyy||MM/dd/yyyy HH:mm:ss||MM/dd/yyyy HH:mm:ss.SSS||epoch_millis",
+            "dd/MM/yyyy||dd/MM/yyyy HH:mm:ss||dd/MM/yyyy HH:mm:ss.SSS||epoch_millis",
+            "dd.MM.yyyy||dd.MM.yyyy HH:mm:ss||dd.MM.yyyy HH:mm:ss.SSS||epoch_millis"
+        ],
+        "dynamic_templates": [
+            {
+                "strings": {
+                    "mapping": {
+                        "type": "string",
+                        "index": "not_analyzed",
+                        "fields": {
+                            "search": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "match_mapping_type": "string",
+                    "match": "*"
+                }
+            }
+        ]
+    }
+}

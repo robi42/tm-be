@@ -1,0 +1,53 @@
+= TempMunger REST API Docs
+
+
+[[resources]]
+== Resources
+
+
+[[resources-search]]
+=== Search
+
+The search provides the entry point into the service.
+
+
+[[resources-search-access]]
+==== Accessing the search
+
+A `POST` request is used to access the search.
+
+===== Example cURL
+
+include::{snippets}/search/curl-request.adoc[]
+
+===== Example request
+
+include::{snippets}/search/http-request.adoc[]
+
+===== Example response
+
+include::{snippets}/search/http-response.adoc[]
+
+
+[[resources-upload]]
+=== Upload
+
+The upload enables importing data formatted as CSV.
+
+
+[[resources-upload-access]]
+==== Accessing the upload
+
+A `POST` request is used to access the upload.
+
+===== Example cURL
+
+include::{snippets}/upload/curl-request.adoc[]
+
+===== Example request
+
+include::{snippets}/upload/http-request.adoc[]
+
+===== Example response
+
+include::{snippets}/upload/http-response.adoc[]

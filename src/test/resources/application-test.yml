@@ -1,0 +1,9 @@
+spring:
+  application.name: temp-munger-test
+  main.banner-mode: "off"
+
+management.port: -1
+
+logging.level:
+  root: ERROR
+  net.robi42.tempmunger: WARN

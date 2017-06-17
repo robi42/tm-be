@@ -1,0 +1,15 @@
+# General
+.DS_Store
+*.log
+
+# IDEA
+*.iml
+.idea/
+
+# Gradle
+.gradle/
+build/
+
+# Elasticsearch
+/data/temp-munger
+/data/temp-munger-test

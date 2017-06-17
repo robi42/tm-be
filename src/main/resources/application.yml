@@ -1,0 +1,25 @@
+spring:
+  application.name: temp-munger
+
+  jackson:
+    serialization:
+      write-date-timestamps-as-nanoseconds: false
+    deserialization:
+      read-date-timestamps-as-nanoseconds: false
+  http:
+    multipart:
+      max-file-size: 5MB
+      resolve-lazily: true
+
+server.port: 8888
+management:
+  port: 8889
+  context-path: /manage
+
+security:
+  basic.path: ${management.context-path}/**
+  user: # Override credentials in production.
+    name: admin
+    password: secret
+
+logging.level.net.robi42.tempmunger: DEBUG
