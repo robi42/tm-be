@@ -103,7 +103,7 @@ private const val AGG_AVG = "avg"
         }
         return multiMatchQuery(q, *fields)
                 .type(PHRASE_PREFIX)
-                .maxExpansions(10000)
+                .maxExpansions(10_000)
     }
 
     private fun getMappingProperties(): Map<*, *> {
